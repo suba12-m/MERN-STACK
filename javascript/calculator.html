@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "number" id="num1"/>
+    <input type = "number" id ="num2"/>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <input type = "text" id ="result"/>
+
+</body>
+<script>
+    function add()
+    {
+        var val1=Number(document.getElementById("num1").value);
+        var val2=Number(document.getElementById("num2").value);
+        var add = val1+val2;
+        document.getElementById("result").value= add
+
+    }
+    function sub()
+    {
+        var val1=Number(document.getElementById("num1").value);
+        var val2=Number(document.getElementById("num2").value);
+        var sub = val1-val2;
+        document.getElementById("result").value= sub
+
+    }
+    function mul()
+    {
+        var val1=Number(document.getElementById("num1").value);
+        var val2=Number(document.getElementById("num2").value);
+        var mul = val1*val2;
+        document.getElementById("result").value= mul
+
+    }
+    function div()
+    {
+        var val1=Number(document.getElementById("num1").value);
+        var val2=Number(document.getElementById("num2").value);
+        var div = val1/val2;
+        document.getElementById("result").value= div
+
+    
+    }
+    
+</script>
+</html>

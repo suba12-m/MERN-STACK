@@ -1,49 +1,36 @@
 
 
-<style>
-        .div1 h1{
-            background-color: brown;
+<style >
+        .div1 h1p{
+            background-color:blueviolet;
         }
-        .div2 h2{
-            color: blue;
+        .div2{
+            color:red;
         }
-        h2{
-            color: rebeccapurple;
+        .s1{
+            text-decoration: solid;
         }
-        .s1 h1{
-            color: yellowgreen;
-        }
-        .s2 h2{
-            color: aqua;
+        h2 {
+            text-align: center;
         }
         .menu{
-            display: flex
-            flex-direction row;
+            display:flex;
+            flex-direction:row;
+            list-style:none;
         }
-        .menu l1{
-            margin: 5px;
-            
+        .menu li
+        {
+            margin:5px;
         }
-        .menu{
-            list-style: none;
-            
-        }
-        .active{
-            background-color: aquamarine;
+       <!-- .active{
+            display: flex;
             height:25vh;
             width: 25%;
-            border: 1px solid #049fad;
-            display: flex;
-            flex-direction: row;
-        }
+        }-->
         .content{
-            height:25vh;
-            width: 25%;
+            height: 25vh;
             display: flex;
-            flex-direction: column;
+            width: 15%;
         }
-    
-        
-        
-
-</style>
+       
+    </style>
