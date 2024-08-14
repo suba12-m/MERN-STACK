@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name="text" id="text"/>
+    <input job="text" id="job"/>
+    <button onclick="getapi()">type</button>
+    <button onclick="getApi()">Click</button>
+    <button onclick="postApi()">Click</button>
+</body>
+<script>
+    //fetch data
+    async function getapi() {
+        let name = document.getElementById("text").value;
+        let job = document.getElementById("job").value;
+        let data = { "name": name, "job": job };
+        let res = await fetch("https://reqres.in/api/users", { "method": "POST", body: JSON.stringify(data), headers: { "content-type": "application/json" } });
+        let json = await res.json();
+        console.log(json);
+    }
+    //getApi
+    async function getApi(){
+        
+        let res = await fetch("https://reqres.in/api/users/",);
+        console.log(res);
+
+    }
+    async function getApi(){
+        let res = await fetch("https://reqres.in/api/users/");
+        let json = await res.json();
+        console.log(json);
+
+    }
+    async function getApi(){
+        let res = await fetch("https://reqres.in/api/users/",{"method":"get"});
+        console.log(res);
+
+    }
+    //postApi
+    async function postApi(){
+        let data = {
+            "name":"subasree",
+            "job":"leader"};
+            let res = await fetch("https://reqres.in/api/users/",
+            {"method":"POST",body: JSON.stringify(data),headers:{"content-type":"application/json"}
+        });
+            let json = await res.json();
+            console.log(json);
+            
+    }
+
+    
+</script>
+</html>
