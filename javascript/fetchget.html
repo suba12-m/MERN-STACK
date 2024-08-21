@@ -40,18 +40,7 @@
         console.log(res);
 
     }
-    //postApi
-    async function postApi(){
-        let data = {
-            "name":"subasree",
-            "job":"leader"};
-            let res = await fetch("https://reqres.in/api/users/",
-            {"method":"POST",body: JSON.stringify(data),headers:{"content-type":"application/json"}
-        });
-            let json = await res.json();
-            console.log(json);
-            
-    }
+    
 
     
 </script>
